@@ -44,8 +44,6 @@ function Disconnect()
 }
 function SendOffer(offer)
 {
-    console.log('send offer')
-
 this.broadcast.emit("BackOffer",offer)
 }
 function SendAnswer(data)
