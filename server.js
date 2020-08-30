@@ -5,7 +5,10 @@ const http=require('http').Server(app)
 const io = require('socket.io')(http)
 const port = process.env.port || 3000
 
-
+app.get('/favicon.ico', function(req, res) { 
+    res.status(204);
+    res.end();    
+});
 app.use(express.static(__dirname+"/public"))
 let clients=0
 io.on('connection',function(socket){
