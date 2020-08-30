@@ -1,0 +1,25 @@
+{
+  "name": "p2pvideocall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "*",
+    "git-install": "^0.5.2",
+    "nodemon": "^2.0.4",
+    "npm-git-install": "^0.3.0",
+    "simple-peer": "*",
+    "socket-io": "*",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "heroku": "^7.42.13",
+    "watchify": "*"
+  },
+  "license": "ISC"
+}
