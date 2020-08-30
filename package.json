@@ -10,7 +10,11 @@
   "author": "",
   "dependencies": {
     "express": "*",
+    "git-install": "^0.5.2",
+    "nodemon": "^2.0.4",
+    "npm-git-install": "^0.3.0",
     "simple-peer": "*",
+    "socket-io": "*",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
