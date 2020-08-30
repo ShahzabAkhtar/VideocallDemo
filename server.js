@@ -3,8 +3,10 @@ const app = express()
 
 const http=require('http').Server(app)
 const io = require('socket.io')(http)
-const port = process.env.port || 3000
-
+const port = process.env.port || 8080
+http.listen(port,() =>{
+    console.log(`Active ${port}`)
+})
 app.get('/favicon.ico', function(req, res) { 
     res.status(204);
     res.end();    
@@ -50,6 +52,3 @@ function SendAnswer(data)
 {
     this.broadcast.emit("BackAnswer",data)
 }
-http.listen(port,() =>{
-    console.log(`Active ${port}`)
-})
