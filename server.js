@@ -3,7 +3,7 @@ const app = express()
 
 const http=require('http').Server(app)
 const io = require('socket.io')(http)
-const port = process.env.port
+const port = process.env.port || 3000
 http.listen(port,() =>{
     console.log(`Active ${port}`)
 })
