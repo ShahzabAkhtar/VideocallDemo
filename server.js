@@ -16,7 +16,7 @@ let clients=0
 io.on('connection',function(socket){
     socket.on('NewClient', function()
     {
-        if(clients <2 )
+        if(clients < 2 )
         {
             if(clients==1)
             {
